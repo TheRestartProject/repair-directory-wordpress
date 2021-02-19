@@ -21,6 +21,7 @@ function repair_directory_plugin_add_shortcode_cb($atts)
     // Set defaults.
     $defaults = [
         'src' => 'https://map.restarters.net/',
+        'domain' => 'https://map.restarters.net',
         'region' => 'London',
         'width' => '100%',
         'height' => '600',
@@ -37,7 +38,7 @@ function repair_directory_plugin_add_shortcode_cb($atts)
     }
 
     // Construct source, which needs to include the region.
-    $atts['src'] = esc_url($atts['src']) . '?region=' . esc_attr($atts['region']);
+    $atts['src'] = esc_url($atts['src']) . '?region=' . esc_attr($atts['region']) . '&domain=' . esc_attr($atts['domain']);
     unset($atts['region']);
 
     // Construct HTML to return
