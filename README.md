@@ -31,6 +31,28 @@ Once installed and activated, the plugin can be used on a WordPress page using t
 `[repair-directory region="Wales" width="100%" height="500" region="London" domain="https://map.restarters.net"`
 
 The following options are available:
+* **rd_parenturl** default `https://map.restarters.net`.  This is the path of the page at which the
+ Repair Directory is included.  It is used when constructing links to share.  This must include the http:// or https:// 
+ part, and does not have a trailing slash.
+* **rd_region** default `London` Either `London` or `Wales`.  This controls which default view of the map is shown and 
+which businesses are included.
+* **width** default `100%` Size of the map shown.
+* **height** default `600` Height of the map shown.
+
+== Installation ==
+
+This plugin is manually installed from a ZIP file supplied by The Restart Project.
+
+1. Go to the WordPress Plugins Page
+2. Click *Add New*
+3. Select the ZIP file
+4. Activate the plugin
+
+Once installed and activated, the plugin can be used on a WordPress page using the `repair-directory` shortcode, e.g.
+
+`[repair-directory region="Wales" width="100%" height="500" region="London" domain="https://map.restarters.net"`
+
+The following options are available:
 * **domain** default `https://map.restarters.net`.  This is the URL of your domain, which is including the Repair 
 Directory.  It is used when constructing links to share.  This must include the http:// or https:// part.
 * **region** default `London` Either `London` or `Wales`.  This controls which default view of the map is shown and 
