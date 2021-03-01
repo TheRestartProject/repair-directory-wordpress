@@ -1,5 +1,6 @@
 ## Restart Repair Directory
 
 The Restart Repair Directory is a tool for encouraging repair through local businesses.  
-It allows for the recording of local repair businesses in a directory and the searching of this directory by 
-the public.  [Find out more](https://therestartproject.org/repairdirectory/about).
+
+This plugin embeds a public, searchable directory and map interface for the businesses in a particular region.
+Contact <tech@therestartproject.org> to find out more about how to add and manage businesses for your region.
