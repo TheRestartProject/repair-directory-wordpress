@@ -20,12 +20,13 @@ Contact [tech@therestartproject.org](mailto:tech@therestartproject.org) to find 
 
 ## Installation
 
-This plugin is manually installed from a ZIP file supplied by The Restart Project.
+Download the latest release ZIP file from [the Releases page](https://github.com/TheRestartProject/repair-directory-wordpress/releases).  Then:
 
 1. Go to the WordPress Plugins Page
-2. Click *Add New*
-3. Select the ZIP file
-4. Activate the plugin
+2. Deactivate and delete any existing Repair Directory plugin.
+3. Click *Add New*
+4. Select the ZIP file and upload it.
+5. Activate the plugin
 
 Once installed and activated, the plugin can be used on a WordPress page using the `repair-directory` shortcode, e.g.
 
