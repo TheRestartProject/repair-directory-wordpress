@@ -3,7 +3,7 @@
 Plugin Name: Repair Directory
 Plugin URI: http://map.restarters.net/
 Description: Embed the Repair Directory
-Version: 0.1
+Version: 0.4
 Author: TheRestartProject
 Author URI: https://therestartproject.org/
 License: GPLv3
