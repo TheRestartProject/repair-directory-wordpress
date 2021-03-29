@@ -51,7 +51,7 @@ function repair_directory_plugin_add_shortcode_cb($atts)
 
     unset($atts['rd_region']);
     unset($atts['rd_parenturl']);
-    unset($atts['rd_style']);
+    unset($atts['rd_language']);
 
     foreach ($_GET as $var => $value) {
         if (strpos($var, 'rd_') === 0) {
