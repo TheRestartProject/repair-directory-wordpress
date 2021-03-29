@@ -45,7 +45,7 @@ function repair_directory_plugin_add_shortcode_cb($atts)
     // variables the Repair Directory will use, and we don't want to introduce that dependency.
     $params = [
         'rd_region' => esc_attr($atts['rd_region']),
-        'rd_lanauge' => esc_attr($atts['rd_language']),
+        'rd_language' => esc_attr($atts['rd_language']),
         'rd_parenturl' => esc_attr($atts['rd_parenturl'])
     ];
 
