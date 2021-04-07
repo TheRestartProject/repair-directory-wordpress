@@ -44,11 +44,13 @@ function repair_directory_plugin_add_shortcode_cb($atts)
     // variables the Repair Directory will use, and we don't want to introduce that dependency.
     $params = [
         'rd_region' => esc_attr($atts['rd_region']),
-        'rd_parenturl' => esc_attr($atts['rd_parenturl'])
+        'rd_parenturl' => esc_attr($atts['rd_parenturl']),
+        'rd_addbusiness' => esc_attr($atts['rd_addbusiness'])
     ];
 
     unset($atts['rd_region']);
     unset($atts['rd_parenturl']);
+    unset($atts['rd_addbusiness']);
 
     foreach ($_GET as $var => $value) {
         if (strpos($var, 'rd_') === 0) {

@@ -38,5 +38,6 @@ The following options are available:
  part, and does not have a trailing slash.
 * **rd_region** default `London` Either `London` or `Wales`.  This controls which default view of the map is shown and 
 which businesses are included.
+* **rd_addbusiness** default `null`.  If present, this is the URL of a page where users can submit a new business.
 * **width** default `100%` Size of the map shown.
 * **height** default `600` Height of the map shown.
