@@ -23,6 +23,7 @@ function repair_directory_plugin_add_shortcode_cb($atts)
         'src' => 'https://map.restarters.net/',
         'rd_parenturl' => 'https://map.restarters.net',
         'rd_region' => 'London',
+        'rd_addbusiness' => null,
         'width' => '100%',
         'height' => '600',
         'scrolling' => 'no',
