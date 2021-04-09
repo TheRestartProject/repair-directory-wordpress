@@ -3,7 +3,7 @@
 Plugin Name: Repair Directory
 Plugin URI: http://map.restarters.net/
 Description: Embed the Repair Directory
-Version: 0.4
+Version: 0.5
 Author: TheRestartProject
 Author URI: https://therestartproject.org/
 License: GPLv3
@@ -24,6 +24,8 @@ function repair_directory_plugin_add_shortcode_cb($atts)
         'rd_parenturl' => 'https://map.restarters.net',
         'rd_region' => 'London',
         'rd_language' => 'en',
+        'rd_style' => null,
+        'rd_addbusiness' => null,
         'width' => '100%',
         'height' => '600',
         'scrolling' => 'no',
@@ -46,12 +48,16 @@ function repair_directory_plugin_add_shortcode_cb($atts)
     $params = [
         'rd_region' => esc_attr($atts['rd_region']),
         'rd_language' => esc_attr($atts['rd_language']),
-        'rd_parenturl' => esc_attr($atts['rd_parenturl'])
+        'rd_style' => esc_attr($atts['rd_style']),
+        'rd_parenturl' => esc_attr($atts['rd_parenturl']),
+        'rd_addbusiness' => esc_attr($atts['rd_addbusiness'])
     ];
 
     unset($atts['rd_region']);
-    unset($atts['rd_parenturl']);
     unset($atts['rd_language']);
+    unset($atts['rd_style']);
+    unset($atts['rd_parenturl']);
+    unset($atts['rd_addbusiness']);
 
     foreach ($_GET as $var => $value) {
         if (strpos($var, 'rd_') === 0) {
