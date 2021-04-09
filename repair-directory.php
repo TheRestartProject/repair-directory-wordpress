@@ -23,6 +23,7 @@ function repair_directory_plugin_add_shortcode_cb($atts)
         'src' => 'https://map.restarters.net/',
         'rd_parenturl' => 'https://map.restarters.net',
         'rd_region' => 'London',
+        'rd_language' => 'en',
         'rd_addbusiness' => null,
         'width' => '100%',
         'height' => '600',
@@ -45,11 +46,13 @@ function repair_directory_plugin_add_shortcode_cb($atts)
     // variables the Repair Directory will use, and we don't want to introduce that dependency.
     $params = [
         'rd_region' => esc_attr($atts['rd_region']),
+        'rd_language' => esc_attr($atts['rd_language']),
         'rd_parenturl' => esc_attr($atts['rd_parenturl']),
         'rd_addbusiness' => esc_attr($atts['rd_addbusiness'])
     ];
 
     unset($atts['rd_region']);
+    unset($atts['rd_language']);
     unset($atts['rd_parenturl']);
     unset($atts['rd_addbusiness']);
 
