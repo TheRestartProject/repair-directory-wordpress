@@ -48,12 +48,14 @@ function repair_directory_plugin_add_shortcode_cb($atts)
     $params = [
         'rd_region' => esc_attr($atts['rd_region']),
         'rd_language' => esc_attr($atts['rd_language']),
+        'rd_style' => esc_attr($atts['rd_style']),
         'rd_parenturl' => esc_attr($atts['rd_parenturl']),
         'rd_addbusiness' => esc_attr($atts['rd_addbusiness'])
     ];
 
     unset($atts['rd_region']);
     unset($atts['rd_language']);
+    unset($atts['rd_style']);
     unset($atts['rd_parenturl']);
     unset($atts['rd_addbusiness']);
 
